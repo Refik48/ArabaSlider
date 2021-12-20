@@ -10,7 +10,7 @@ import {
 
 const MenuBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="menubar">
+    <Navbar bg="light" expand="md" className="menubar">
       <Container>
         <Navbar.Brand href="#home">
           <Image src={logo} />

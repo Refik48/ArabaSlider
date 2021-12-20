@@ -10,7 +10,9 @@ const Slider = () => {
           <Col md={{ span: 7, order: "last" }}>
             <SliderCarousel />
           </Col>
-          <Col md={{ span: 5, order: "first" }}>FORM</Col>
+          <Col md={{ span: 5, order: "first" }}>
+            <SliderForm />
+          </Col>
         </Row>
       </Container>
     </div>

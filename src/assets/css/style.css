@@ -5,7 +5,7 @@
   --color3: #003297;
   --color4: #cecece;
   --color5: #363636;
-  --color1-transparent-15:rgba(0, 76, 229, 0.15);
+  --color1-transparent-15: rgba(0, 76, 229, 0.15);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -37,6 +37,17 @@ body {
   padding-left: 1rem;
 }
 /****************** MENUBAR *****************/
+.menubar .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 450px) {
+  .menubar .navbar-nav {
+    flex-direction: column;
+  }
+}
+
 .menubar .navbar-nav a.active {
   border-bottom: 0.3rem solid var(--color2);
 }
@@ -46,25 +57,22 @@ body {
   ) !important; /*TODO !important yazinca oncelik bu style'da olur. */
 }
 
-
 /****************** SLIDER *****************/
-.slider{
+.slider {
   background-color: var(--color1-transparent-15);
 }
-.slider .carousel-caption{
+.slider .carousel-caption {
   top: 0;
   left: 0;
   text-align: left;
 }
-.slider .carousel-control-next, 
-.slider .carousel-control-prev{
-  top:auto;
-  bottom:15px;
+.slider .carousel-control-next,
+.slider .carousel-control-prev {
+  top: auto;
+  bottom: 15px;
   width: auto;
-
-
 }
-.slider .carousel-control-prev{
-  right:50px;
-  left:auto;
+.slider .carousel-control-prev {
+  right: 50px;
+  left: auto;
 }
